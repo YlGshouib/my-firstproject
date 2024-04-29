@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Edit Category</title>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans">
+   <style>
+     body {
+       font-family: 'Google Sans', sans-serif;
+       margin: 20px;
+     }
+     h1 {
+       color: #1a73e8;
+     }
+     input[type=text] {
+       padding: 8px;
+       border: 1px solid #ccc;
+       border-radius: 4px;
+       width: 300px;
+     }
+     input[type=submit] {
+       background-color: #1a73e8;
+       color: white;
+       padding: 8px 16px;
+       border: none;
+       border-radius: 4px;
+       cursor: pointer;
+     }
+   </style>
+ </head>
+ <body>
+   <h1>Edit Category</h1>
+   <form method="post">
+     <label for="name">Category Name:</label>
+     <input type="text" id="name" name="name" value="{{ category.name }}">
+     <input type="submit" value="Save">
+   </form>
+ </body>
+</html>
